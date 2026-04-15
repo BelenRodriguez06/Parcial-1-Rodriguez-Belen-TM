@@ -19,6 +19,7 @@
 
 <body>
 
+    <!-- 3 columnas con info -->
     <section class="header">
 
         <div class="arriba">
@@ -31,10 +32,52 @@
             </article>
 
             <article class="col3">
-                <p><span class="email">sbarbimaria@gmail.com</span></p>
+                <p><span class="email" data-bs-toggle="modal" data-bs-target="#contactModal">
+                        sbarbimaria@gmail.com
+                    </span></p>
             </article>
         </div>
 
+        <!-- formulario funcional real-->
+        <div class="modal fade" id="contactModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Contactame</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form action="https://formspree.io/f/xojyvzjd" method="POST">
+
+                            <div class="mb-3">
+                                <label class="col-form-label">Tu nombre:</label>
+                                <input type="text" name="nombre" class="form-control" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="col-form-label">Tu email:</label>
+                                <input type="email" name="email" class="form-control" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="col-form-label">Mensaje:</label>
+                                <textarea name="mensaje" class="form-control" required></textarea>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- nombre q cambia de color letra por letra-->
         <div class="nombre">
             <h1 class="titulo">
                 <span>B</span><span>E</span><span>L</span><span>E</span><span>N</span>
@@ -42,33 +85,40 @@
                 <span>R</span><span>O</span><span>D</span><span>R</span><span>I</span><span>G</span><span>U</span><span>E</span><span>Z</span>
             </h1>
         </div>
-
+        <!-- stickers-->
         <div class="sticker-area">
-            <img src="https://static.vecteezy.com/system/resources/previews/013/743/633/non_2x/banana-pixel-art-png.png"  class="sticker" style="top: 0%; left: 20%;">
-            <img src="/imagenes/ticketamarilo.png" class="sticker" style="top: 0%; left: 35%;">
-            <img src="/imagenes/vibrant-yellow-crayon-with-pointed-tip-and-black-stripes-perfect-for-creative-art-projects-and-children-drawings-png.webp"  class="sticker" style="top: 0%; left: 45%;">
-            <img src="https://static.vecteezy.com/system/resources/previews/013/743/633/non_2x/banana-pixel-art-png.png"   class="sticker" style="top: 0%; left: 65%;">
+            <div class="stickers">
+                <img src="https://png.pngtree.com/png-vector/20220820/ourmid/pngtree-banana-pixel-icon-png-image_6117325.png"
+                    class="sticker sticker-banana">
+
+                <img src="/imagenes/ticketamarilo.png" class="sticker sticker-ticket">
+
+                <img src="/imagenes/vibrant-yellow-crayon-with-pointed-tip-and-black-stripes-perfect-for-creative-art-projects-and-children-drawings-png.webp"
+                    class="sticker sticker-crayon">
+
+                <img src="/imagenes/patito_Mesa de trabajo 1.png" class="sticker sticker-patito">
+            </div>
         </div>
 
     </section>
 
-
+    <!-- card sobre mi-->
     <div class="d-flex justify-content-center" style="margin-top: 60px;">
-
         <div class="card mb-3" style="max-width: 700px; width: 85%;">
-
             <div class="row g-0">
-
                 <div class="col-md-4">
-                    <img src="https://i.pinimg.com/originals/e2/45/27/e24527408cab572eb4a5adc8aec3afb5.gif"
-                        class="img-fluid rounded-start h-100 object-fit-cover" alt="...">
+                    <img src="/imagenes/gifyo.gif" class="img-fluid rounded-start h-100 object-fit-cover" alt="...">
                 </div>
 
                 <div class="col-md-8">
                     <div class="card-body">
                         <h5 class="card-title">Sobre mí</h5>
                         <p class="card-text">
-                            Soy estudiante en formación dentro del área del diseño, con interés en el desarrollo de proyectos creativos que integren estética y funcionalidad. A lo largo de mi recorrido académico he adquirido herramientas en áreas como el diseño visual, el modelado 3D y la comunicación visual. Busco seguir desarrollándome profesionalmente, explorando nuevas formas de expresión y aplicando mis conocimientos en proyectos reales.
+                            Soy estudiante en formación dentro del área del diseño, con interés en el desarrollo de
+                            proyectos creativos que integren estética y funcionalidad. A lo largo de mi recorrido
+                            académico he adquirido herramientas en áreas como el diseño visual, el modelado 3D y la
+                            comunicación visual. Busco seguir desarrollándome profesionalmente, explorando nuevas formas
+                            de expresión y aplicando mis conocimientos en proyectos reales.
 
                         </p>
                         <p class="card-text">
@@ -76,20 +126,136 @@
                         </p>
                     </div>
                 </div>
-
             </div>
 
             <div class="scroll-text">
-                <p>DISEÑADORA MULTIMEDIAL • GRÁFICA • ANIMADORA • </p>
+                <p> DISEÑADORA MULTIMEDIAL • GRÁFICA • ANIMADORA •
+                    DISEÑADORA MULTIMEDIAL • GRÁFICA • ANIMADORA • </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- trabajos -->
+    <section class="TRABAJOS">
+        <section class="trabajos container my-5">
+            <div class="row align-items-center">
+
+                <!-- txt izq -->
+                <div class="col-md-6">
+                    <h2 class="titulo-seccion">Modelado 3D</h2>
+
+                    <p class="descripcion">
+                        Desarrollo modelos tridimensionales explorando forma, volumen y textura.
+                        Utilizo herramientas de modelado para construir piezas visuales que combinan
+                        estética y funcionalidad, aplicando iluminación y materiales para lograr
+                        resultados realistas y expresivos.
+                    </p>
+                </div>
+
+                <!-- carrusel dere -->
+                <div class="col-md-6">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <img src="/imagenes/vinorenderf.png" class="d-block w-100" alt="">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="/imagenes/img6.png" class="d-block w-100" alt="">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="/imagenes/belnderchicacap.jpg" class="d-block w-100" alt="">
+                            </div>
+
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="trabajos container my-5">
+
+            <div class="row align-items-center">
+
+                <!-- carrusel izq -->
+                <div class="col-md-6">
+
+                    <div id="carouselExample2" class="carousel slide">
+
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <img src="/imagenes/tuimagen4.jpg" class="d-block w-100" alt="">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="/imagenes/tuimagen5.jpg" class="d-block w-100" alt="">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="/imagenes/tuimagen6.jpg" class="d-block w-100" alt="">
+                            </div>
+
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- txt dere -->
+                <div class="col-md-6">
+                    <h2 class="titulo-seccion">Visual Branding</h2>
+
+                    <p class="descripcion">
+                        Desarrollo identidades visuales explorando tipografía, color y composición.
+                        Busco generar sistemas gráficos coherentes que comuniquen de manera clara
+                        y atractiva, adaptándose a distintos soportes y contextos.
+                    </p>
+                </div>
             </div>
 
-        </div>
+        </section>
+    </section> <!-- section de TRABAJOS gral-->
 
-    </div>
+    <!-- script formulario-->
+    <script>
+        function enviarMail() {
+            const nombre = document.getElementById("nombre").value;
+            const mensaje = document.getElementById("mensaje").value;
+
+            const mail = "mailto:sbarbimaria@gmail.com"
+                + "?subject=" + encodeURIComponent("Contacto de " + nombre)
+                + "&body=" + encodeURIComponent(mensaje);
+
+            window.location.href = mail;
+        }
+    </script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
 
 </body>
 

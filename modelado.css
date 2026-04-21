@@ -1,21 +1,139 @@
+/* RESET BASICO (por si no lo tenés) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------- HEADER ---------------- */
+
+.arriba {
+    font-family: montserrat;
+    display: flex;
+    justify-content: center;
+    /*junta en el medio */
+    align-items: center;
+    gap: 15%;
+    /* controla la distancia entre los 3 */
+    padding: 5% 5% 1%;
+    font-size: 23px;
+
+}
+
+.col1, .col2, .col3 {
+    font-size: 23px;
+}
+
 .link-volver {
     text-decoration: none;
-    color: inherit;
-    cursor: pointer;
+    color: black;
     font-weight: 500;
 }
 
 .link-volver:hover {
-    font-weight: bold;
-    text-shadow: 0px 0px 10px rgba(133, 138, 227, 0.6);
+    text-decoration: underline;
+    cursor: pointer;
 }
+
+.email {
+    cursor: pointer;
+}
+
+/* --- titulo del mdoelado ------ */
 
 .titulo-modelado {
-    font-size: clamp(40px, 6vw, 80px);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
     font-weight: 700;
     color: #000;
-    width: 100%; 
-    letter-spacing: 2%;
 }
 
- 
+.descripcion {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    max-width: 800px;
+    margin: 10px auto 40px auto; /* más espacio abajo */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ----- TRABAJO ----- */
+
+.trabajo {
+    margin-top: 0; /* carrusel y texto*/
+}
+
+/* TITULO  */
+.titulo-trabajo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 0%; 
+}
+
+/* --badges -- */
+
+.badges-tecnologias {
+    margin-bottom: 15px;
+}
+
+.badges-tecnologias .badge {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    padding: 7px 14px;
+    border-radius: 20px;
+    margin: 4px;
+    
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
+
+    transition: all 0.2s ease;
+}
+
+/* efecto hover sutil */
+.badges-tecnologias .badge:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* --- CarruseL - */
+
+.carrusel-custom {
+    max-width: 700px;   /* controla el tamaño */
+    margin: 0 auto;     /* lo centra */
+}
+
+/* imagenes */
+.carousel-item img {
+    border-radius: 12px;
+}
+
+/* botones del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* hace los iconos negros/blancos según fondo */
+}
+
+/* --- RESPONSIVE ---- */
+
+@media (max-width: 768px) {
+    .arriba {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .titulo-modelado {
+        font-size: 28px;
+    }
+
+    .descripcion {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .carrusel-custom {
+        max-width: 100%;
+    }
+}

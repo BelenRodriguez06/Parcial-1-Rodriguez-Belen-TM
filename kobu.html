@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kobu Print</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="kobu.css">
+</head>
+
+<body>
+
+    <!-- 4 columnas con info -->
+    <section class="header">
+
+        <div class="arriba">
+            <article class="col1">
+                <p>Argentina, Buenos Aires</p>
+            </article>
+
+            <article class="col2">
+                <p class="portfolio">Portfolio</p>
+            </article>
+
+            <article class="col3">
+                <p>
+                    <span class="email" data-bs-toggle="modal" data-bs-target="#contactModal">
+                        sbarbimaria@gmail.com
+                    </span>
+                </p>
+            </article>
+
+            <!-- col menu-->
+            <article class="col4">
+                <button class="navbar-toggler menu-btn" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#menuLateral">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </article>
+        </div>
+
+        <!-- formulario funcional real-->
+        <div class="modal fade" id="contactModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Contactame</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form action="https://formspree.io/f/xojyvzjd" method="POST">
+
+                            <div class="mb-3">
+                                <label class="col-form-label">Tu nombre:</label>
+                                <input type="text" name="nombre" class="form-control" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="col-form-label">Tu email:</label>
+                                <input type="email" name="email" class="form-control" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="col-form-label">Mensaje:</label>
+                                <textarea name="mensaje" class="form-control" required></textarea>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TITULO -->
+    <div class="container text-center my-4">
+        <h1 class="titulo-kobu">KOBU PRINT</h1>
+
+        <p class="descripcion">
+            Kobu Print es un emprendimiento creativo enfocado en el diseño e impresión de piezas personalizadas. Nos
+            especializamos en transformar ideas en productos únicos, combinando estética, calidad y atención al detalle.
+
+            Ofrecemos soluciones gráficas pensadas para destacar, desde stickers y papelería hasta piezas visuales a
+            medida, adaptándonos a cada necesidad. En Kobu Print creemos en el valor de lo original y en el impacto de
+            un buen diseño.
+        </p>
+    </div>
+
+    <!-- TRABAJO KOBU PRINT -->
+    <section class="trabajo">
+
+        <div class="container text-center">
+
+            <!-- titulo -->
+            <h2 class="titulo-trabajo mb-0">Kobu Stickers</h2>
+
+            <!-- carrusel -->
+            <div id="carouselKobu" class="carousel slide carousel-fade carrusel-custom">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagenes/kobu1.png" class="d-block w-100" alt="">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="imagenes/kobu2.png" class="d-block w-100" alt="">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="imagenes/kobu3.png" class="d-block w-100" alt="">
+                    </div>
+                </div>
+
+                <!-- botones -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselKobu" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselKobu" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+            </div>
+
+            <!-- descripcion -->
+            <p class="descripcion descripcion-trabajo">
+                Desarrollo de stickers gráficos para Kobu Print, explorando ilustración, color y composición.
+                Se trabajó la aplicación del diseño a formato físico, buscando piezas atractivas y reproducibles en
+                impresión.
+            </p>
+
+            <!-- badges -->
+            <div class="badges-tecnologias mb-3">
+                <span class="badge">Stickers</span>
+                <span class="badge">Illustration</span>
+                <span class="badge">Print Design</span>
+                <span class="badge">Branding</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- boton hamburguesa-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="menuLateral">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menú</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="modelado.html">Modelado 3D</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="visual.html">Visual Branding</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="kobu.html">Kobu Print</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

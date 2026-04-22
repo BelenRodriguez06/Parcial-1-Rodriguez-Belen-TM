@@ -14,12 +14,12 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Source+Code+Pro:wght@200..900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
 
-    <!-- 3 columnas con info -->
+    <!-- 4 columnas con info -->
     <section class="header">
 
         <div class="arriba">
@@ -32,9 +32,19 @@
             </article>
 
             <article class="col3">
-                <p><span class="email" data-bs-toggle="modal" data-bs-target="#contactModal">
+                <p>
+                    <span class="email" data-bs-toggle="modal" data-bs-target="#contactModal">
                         sbarbimaria@gmail.com
-                    </span></p>
+                    </span>
+                </p>
+            </article>
+
+            <!-- NUEVA COLUMNA SOLO PARA EL MENU -->
+            <article class="col4">
+                <button class="navbar-toggler menu-btn" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#menuLateral">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </article>
         </div>
 
@@ -234,7 +244,9 @@
 
                 <!-- txt dere -->
                 <div class="col-md-6">
-                    <h2 class="titulo-seccion">Visual Branding</h2>
+                    <a href="visual.html" class="link-titulo">
+                        <h2 class="titulo-seccion">Visual Branding</h2>
+                    </a>
 
                     <p class="descripcion">
                         Produzco identidades visuales explorando tipografía, color y composición.
@@ -251,7 +263,9 @@
 
                 <!-- texto izquierda -->
                 <div class="col-md-6">
-                    <h2 class="titulo-seccion">Kobu Print</h2>
+                    <h2 class="titulo-seccion">
+                        <a href="kobu.html" class="link-seccion">Kobu Print</a>
+                    </h2>
 
                     <p class="descripcion">
                         Creemos que cada laptop, termo o cuaderno es un lienzo en blanco esperando ser intervenido. En
@@ -297,6 +311,36 @@
             </div>
         </section>
     </section> <!-- section de TRABAJOS gral-->
+
+    <!-- boton hamburguesa-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="menuLateral">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menú</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="modelado.html">Modelado 3D</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="visual.html">Visual Branding</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="kobu.html">Kobu Print</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
 
     <!-- script formulario-->
     <script>

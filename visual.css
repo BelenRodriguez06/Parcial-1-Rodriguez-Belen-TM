@@ -1,0 +1,144 @@
+
+/* -----header ---------- */
+
+.link-volver {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.link-volver:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.email {
+    cursor: pointer;
+}
+
+/* ---fondo --- */
+
+body {
+    
+    background-size: cover;       /* ocupa toda la pantalla */
+    background-position: center;  /* centra la imagen */
+    background-repeat: no-repeat; /* no se repite */
+    background-attachment: fixed; /* queda fijo al hacer scroll */
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: -1;
+}
+
+/* ---titulo --- */
+
+.titulo-modelado {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 1px; /* más diseño */
+}
+
+/* --desc --- */
+
+.descripcion {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    max-width: 800px;
+    margin: 10px auto 40px auto;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* descripcion de cada trabajo */
+.descripcion-trabajo {
+    max-width: 700px;
+    margin: 15px auto 10px auto;
+    font-size: 15px;
+    text-align: left; /* más editorial */
+}
+
+/* ----trabajos ----- */
+
+.trabajo {
+    margin-top: 40px;
+}
+
+/* TITULO DE PROYECTO */
+.titulo-trabajo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* --- BADGES-- */
+
+.badges-tecnologias {
+    margin: 10px auto 0 auto;
+}
+
+.badges-tecnologias .badge {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    padding: 6px 12px;
+    border-radius: 6px; 
+    margin: 4px;
+
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
+
+    transition: all 0.2s ease;
+}
+
+.badges-tecnologias .badge:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* --- carrusellll --- */
+
+.carrusel-custom {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.carousel-item img {
+    border-radius: 12px;
+}
+
+/* botones */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+/* --- RESPONSIVE --- */
+
+@media (max-width: 768px) {
+
+    .arriba {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .titulo-modelado {
+        font-size: 28px;
+    }
+
+    .descripcion {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .carrusel-custom {
+        max-width: 100%;
+    }
+}

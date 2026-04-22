@@ -6,7 +6,13 @@ body {
     background-attachment: fixed; /* queda fijo al hacer scroll */
 }
 
-/* ----header es lo mismo del index ----- */
+/* ---- header es lo mismo del index ----- */
+
+
+.col4 {
+    display: flex;
+    align-items: center;
+}
 
 .link-volver {
     text-decoration: none;
@@ -28,7 +34,7 @@ body {
 
 /* --- titulo del mdoelado ------ */
 
-.titulo-modelado {
+.titulo-kobu {
     font-family: 'Montserrat', sans-serif;
     font-size: 70px;
     font-weight: 850;
@@ -52,7 +58,7 @@ body {
 /* ----- TRABAJO ----- */
 
 .trabajo {
-    margin-top: 100px;
+    margin-top: 200px;
     /* carrusel y texto*/
 }
 
@@ -127,7 +133,7 @@ body {
         padding: 20px;
     }
 
-    .titulo-kobu {
+    .titulo-modelado {
         font-size: 28px;
     }
 
